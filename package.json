@@ -1,0 +1,57 @@
+{
+  "name": "gitemojify",
+  "type": "module",
+  "version": "1.0.0",
+  "author": "Yuns <yuns.xie@qq.com>",
+  "license": "MIT",
+  "description": "Add emoji prefix to conventional commit messages",
+  "keywords": [
+    "git",
+    "emoji",
+    "commit",
+    "commitlint",
+    "husky",
+    "conventional-commits"
+  ],
+  "homepage": "https://github.com/AlphaLiu/gitemojify#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlphaLiu/gitemojify"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": "bin/cli.mjs",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "unbuild",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@commitlint/is-ignored": "^20.0.0",
+    "commander": "^14.0.0",
+    "consola": "^3.4.2",
+    "zx": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^6.0.2",
+    "unbuild": "^3.5.0",
+    "vitest": "^4.1.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
