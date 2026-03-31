@@ -1,8 +1,8 @@
 {
   "name": "gitemojify",
   "type": "module",
-  "version": "1.0.0",
-  "author": "Yuns <yuns.xie@qq.com>",
+  "version": "1.0.1",
+  "author": "any",
   "license": "MIT",
   "description": "Add emoji prefix to conventional commit messages",
   "keywords": [
